@@ -48,6 +48,10 @@ function RepositoryGoals({user}) {
     dispatch({type: "UPDATE", payload: updatedRepos});
   };
 
+  const validateGoalToAdd = (goalName) => {
+    return repository.issues.nodes.find(goal => goal.full_name === goalName) == null;
+}
+
   const
     keys = ["full_name", "stargazers_count"],
     data = repository && repository.data && repository.data.text && JSON.parse(repository.data.text).filter(
@@ -61,7 +65,7 @@ function RepositoryGoals({user}) {
 
   return (
     <section>
-      {repository && repository.issues ? (
+      {repository && repository.issues.totalCount > 0 ? (
         <React.Fragment>
           <Flex>
             <RepositoryContext>
@@ -84,11 +88,11 @@ function RepositoryGoals({user}) {
               </SpaceBetweenTop>
             </RepositoryContext>
 
-            <FlexColumn style={{marginLeft: 16, flex: 1}}>
+            <FlexColumn style={{flex: 1}}>
               {viewerStars && (
                 <Card>
                   <h3 style={{fontSize: fontSize.default}}>Repo Recommendations</h3>
-                  {viewerStars && stars.map((star) => <RecommendedRepoItem key={star.full_name} goal={star} onGoalAdded={onGoalAdded} goalsId={goalsId} />)}
+                  {viewerStars && stars.map((star) => <RecommendedRepoItem key={star.full_name} goal={star} onGoalAdded={onGoalAdded} validateGoalToAdd={validateGoalToAdd} goalsId={goalsId} />)}
                 </Card>
               )}
             </FlexColumn>
@@ -109,7 +113,7 @@ function RepositoryGoals({user}) {
           </Card>
         </React.Fragment>
       ) : (
-        <CreateGoals installNeeded={!!repository && !!error} user={(user && user) || ""} onRepoCreation={onRepoCreation} />
+        <CreateGoals installNeeded={!!repository && !!error} databaseCreated={!!(repository && repository.issues)} goalsId={goalsId} onGoalAdded={onGoalAdded} user={(user && user) || ""} onRepoCreation={onRepoCreation} />
       )}
     </section>
   );

@@ -5,6 +5,111 @@
 
 > All notable changes to this project will be documented in this file
 
+## [0.57.0](https://github.com/open-sauced/open-sauced/compare/v0.56.1...v0.57.0) (2023-05-24)
+
+
+### 🍕 Features
+
+* Archive this repo ([#1493](https://github.com/open-sauced/open-sauced/issues/1493)) ([dea5aa3](https://github.com/open-sauced/open-sauced/commit/dea5aa3f9af586d5cb29f38cd6d9eeda38c478d8))
+
+### [0.56.1](https://github.com/open-sauced/open-sauced/compare/v0.56.0...v0.56.1) (2023-03-24)
+
+
+### 🐛 Bug Fixes
+
+* adds token to make triage work ([3a546df](https://github.com/open-sauced/open-sauced/commit/3a546dfb1cadfe98e8fb97986d9fdd0a67234d47))
+
+## [0.56.0](https://github.com/open-sauced/open-sauced/compare/v0.55.0...v0.56.0) (2022-12-14)
+
+
+### 📝 Documentation
+
+* fix repository typo ([#1475](https://github.com/open-sauced/open-sauced/issues/1475)) ([9696718](https://github.com/open-sauced/open-sauced/commit/96967186722dbae2d592cbcb8e59779c593392af))
+
+## [0.55.0](https://github.com/open-sauced/open-sauced/compare/v0.54.2...v0.55.0) (2022-11-21)
+
+
+### 🍕 Features
+
+* enable vite for bundling Storybook ([#1473](https://github.com/open-sauced/open-sauced/issues/1473)) ([7135fe3](https://github.com/open-sauced/open-sauced/commit/7135fe321593523eed47f80a645e3a95804e42e0)), closes [#1429](https://github.com/open-sauced/open-sauced/issues/1429)
+
+### [0.54.2](https://github.com/open-sauced/open-sauced/compare/v0.54.1...v0.54.2) (2022-10-25)
+
+
+### 🐛 Bug Fixes
+
+* weird spacing on the dashboard and repo screen ([#1471](https://github.com/open-sauced/open-sauced/issues/1471)) ([90dc0fe](https://github.com/open-sauced/open-sauced/commit/90dc0fe60fb22140474758a836bc9af13638b4a3)), closes [#1422](https://github.com/open-sauced/open-sauced/issues/1422)
+
+### [0.54.1](https://github.com/open-sauced/open-sauced/compare/v0.54.0...v0.54.1) (2022-10-25)
+
+
+### 🔁 Continuous Integration
+
+* make maintenance callable in forks ([685e385](https://github.com/open-sauced/open-sauced/commit/685e385fb397d91f99ffe949f01f11268d3a5b39))
+
+## [0.54.0](https://github.com/open-sauced/open-sauced/compare/v0.53.5...v0.54.0) (2022-10-24)
+
+
+### 🍕 Features
+
+* add artifact maintenance and global jobs timeout ([#1470](https://github.com/open-sauced/open-sauced/issues/1470)) ([03520e4](https://github.com/open-sauced/open-sauced/commit/03520e4d0fa6923f210088253528ae10960fe55f)), closes [#1469](https://github.com/open-sauced/open-sauced/issues/1469)
+
+### [0.53.5](https://github.com/open-sauced/open-sauced/compare/v0.53.4...v0.53.5) (2022-10-24)
+
+
+### 🐛 Bug Fixes
+
+* correct duplicate repositories added to dashboard ([#1468](https://github.com/open-sauced/open-sauced/issues/1468)) ([a3bd798](https://github.com/open-sauced/open-sauced/commit/a3bd798a41ffc1adcf33994a238afd46676f2cf8)), closes [#1459](https://github.com/open-sauced/open-sauced/issues/1459) [#1219](https://github.com/open-sauced/open-sauced/issues/1219)
+
+### [0.53.4](https://github.com/open-sauced/open-sauced/compare/v0.53.3...v0.53.4) (2022-10-09)
+
+
+### 🐛 Bug Fixes
+
+* correct broken contributing links in readme ([78b26ee](https://github.com/open-sauced/open-sauced/commit/78b26eea1a817578c77e4fc121b57cfc1db2b750)), closes [#1466](https://github.com/open-sauced/open-sauced/issues/1466)
+
+### [0.53.3](https://github.com/open-sauced/open-sauced/compare/v0.53.2...v0.53.3) (2022-10-07)
+
+
+### 🐛 Bug Fixes
+
+* switch forking function with github link template ([#1465](https://github.com/open-sauced/open-sauced/issues/1465)) ([a73df9e](https://github.com/open-sauced/open-sauced/commit/a73df9e512dc9a916f497f00bc71991068a706a3)), closes [#1461](https://github.com/open-sauced/open-sauced/issues/1461)
+
+### [0.53.2](https://github.com/open-sauced/open-sauced/compare/v0.53.1...v0.53.2) (2022-09-27)
+
+
+### 🐛 Bug Fixes
+
+* avoid duplicate repos ([#1464](https://github.com/open-sauced/open-sauced/issues/1464)) ([cd925d8](https://github.com/open-sauced/open-sauced/commit/cd925d85f3f5d0e031ed00b1a973533ab48e8fa1)), closes [#1460](https://github.com/open-sauced/open-sauced/issues/1460) [#1462](https://github.com/open-sauced/open-sauced/issues/1462)
+
+### [0.53.1](https://github.com/open-sauced/open-sauced/compare/v0.53.0...v0.53.1) (2022-07-06)
+
+
+### 🔁 Continuous Integration
+
+* **codeql:** updated the CodeQL version ([#1456](https://github.com/open-sauced/open-sauced/issues/1456)) ([421496d](https://github.com/open-sauced/open-sauced/commit/421496d94555b8c7a3ded12faa7159b4349c5477))
+
+## [0.53.0](https://github.com/open-sauced/open-sauced/compare/v0.52.1...v0.53.0) (2022-07-01)
+
+
+### 🍕 Features
+
+* **social-card:** update the image ([#1455](https://github.com/open-sauced/open-sauced/issues/1455)) ([7e2dacd](https://github.com/open-sauced/open-sauced/commit/7e2dacdde2fea20fc54c5e03593bc60f3fba68ea))
+
+### [0.52.1](https://github.com/open-sauced/open-sauced/compare/v0.52.0...v0.52.1) (2022-06-25)
+
+
+### 🐛 Bug Fixes
+
+* able to add repo name with "."(dot) in it issue[#1451](https://github.com/open-sauced/open-sauced/issues/1451) ([#1453](https://github.com/open-sauced/open-sauced/issues/1453)) ([fcca807](https://github.com/open-sauced/open-sauced/commit/fcca807a44d961dbbe3a66efe0006654486e743a))
+
+## [0.52.0](https://github.com/open-sauced/open-sauced/compare/v0.51.0...v0.52.0) (2022-05-24)
+
+
+### 🍕 Features
+
+* Adds Repo suggestions to the onboarding flow ([#1444](https://github.com/open-sauced/open-sauced/issues/1444)) ([507e047](https://github.com/open-sauced/open-sauced/commit/507e047ff14108cf3e39c2ba6ffeddf63e82c26f))
+
 ## [0.51.0](https://github.com/open-sauced/open-sauced/compare/v0.50.2...v0.51.0) (2022-05-16)
 
 

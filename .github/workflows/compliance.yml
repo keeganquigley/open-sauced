@@ -16,6 +16,7 @@ jobs:
   semantics:
     name: Semantics
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: amannn/action-semantic-pull-request@v3.4.0
         env:
@@ -24,6 +25,7 @@ jobs:
   pr-compliance-checks:
     name: PR Compliance Checks
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: mtfoley/pr-compliance-action@v0.5.0
         with:
@@ -38,7 +40,7 @@ jobs:
 
             In order to be considered for merging, the pull request description must refer to a
             specific issue number. This is described in our
-            [Contributing Guide](https://docs.opensauced.pizza/contributing/getting-started/).
+            [Contributing Guide](https://docs.opensauced.pizza/contributing/introduction-to-contributing/).
 
             This check is looking for a phrase similar to: "Fixes #XYZ" or "Resolves #XYZ" where XYZ is the issue
             number that this PR is meant to address.
@@ -47,13 +49,14 @@ jobs:
 
             In order to be considered for merging, the pull request changes must
             not be implemented on the "%branch%" branch. This is described in our
-            [Contributing Guide](https://docs.opensauced.pizza/contributing/getting-started/).
+            [Contributing Guide](https://docs.opensauced.pizza/contributing/introduction-to-contributing/).
             We would suggest that you close this PR and implement your changes as
             described in our Contributing Guide and open a new pull request.
 
   welcome:
     name: Welcome
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     needs: semantics
     if: github.event.action == 'opened'
     steps:
